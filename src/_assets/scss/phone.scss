@@ -1,0 +1,31 @@
+@import 'size';
+$phoneSize: $phone - .1;
+
+// ================================================================================================================
+@media (max-width: $phoneSize+'px') {
+  .container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .content-page{
+    margin: 0 !important;
+    padding: 0;
+  }
+  .navbar-custom {
+    display: none !important;
+  }
+  .sticky-bottom-container{
+    margin-top: -6rem !important;
+    padding-bottom: 6rem !important;
+  }
+  .sticky-bottom{
+    top: calc(100vh - 7.25rem) !important;
+    z-index: 10;
+  }
+  .email-container{
+    margin-bottom: 0 !important;
+    .inbox-rightbar{
+      padding-bottom: 0 !important;
+    }
+  }
+}
